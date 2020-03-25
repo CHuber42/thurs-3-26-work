@@ -1,4 +1,27 @@
+html, body, .container {
+  height: 99%;
+}
+
 #letter {
+  
   display: none;
-  border: 2px solid green;
+  color: rgb(197, 69, 169);
+  margin: auto;
+  margin-top: 5%;
+  height: 76%;
+  width: 67%;
+  
+  background-image: url("../img/mail.jpg");
+  background-repeat: no-repeat;
+}
+
+#signature {  
+  float: right;
+  margin-right: 6%;
+  margin-top: 38%;
+}
+
+#letter p {
+  margin-left: 2%;
+  padding-top: 2%;
 }
