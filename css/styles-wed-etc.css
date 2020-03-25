@@ -10,3 +10,11 @@ html, body, .container {
   font-weight: 900;
   font-size: 1000%;
 }
+
+#appointments-output {
+  display: none;
+}
+
+button {
+  vertical-align: bottom;
+}
