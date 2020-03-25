@@ -18,3 +18,7 @@ html, body, .container {
 button {
   vertical-align: bottom;
 }
+
+.hidden {
+  background-color: green;
+}
