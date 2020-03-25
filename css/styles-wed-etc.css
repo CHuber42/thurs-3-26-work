@@ -1,0 +1,12 @@
+html, body, .container {
+  height: 99%;
+}
+
+.subpage {
+  height : 30%;
+}
+
+#shout-output {
+  font-weight: 900;
+  font-size: 1000%;
+}
