@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Calculator</title>
     <link rel='stylesheet' href='css/styles-calculator.css' type='text/css'>
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts-calculator.js.js"></script>
+    <script src="js/scripts-calculator.js"></script>
     <title>A fantastical adventure</title>
   </head>
   <body>
     <div class="container">
-      
-      <div id="links">
-        Click <a href="console-practice.html">Here</a> to go to "console practice" exercise.
-      </div>
-
-      <div>
-        <form id="formOne">
-          <div class="form-group">
-            <label for="person-name">(Your name, please)</label><br>
-            <input id="person-name" class="form-control" type="text">
-          </div>
-        
-          <button type="submit" class="btn">What do you have for me?</button>
-        </form>
-      </div>
-
-      
-
-      <div id="letter">
-        <p>
-          Dear <span class="your-name"></span>,
-        </p>
-        <p>
-          Lorem Ipsum.
-          <p id="signature">
-            Signed,<br>
-              Christopher
-          </p>
-        </p>
-      </div>
-      
+      <h1>Calculator</h1>
+      <form id="add">
+        <div class="form-group">
+          <label for="add1">1st number:</label>
+          <input id="add1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="add2">2nd number:</label>
+          <input id="add2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Add!</button>
+      </form>
     </div>
   </body>
+
+  
+  
 </html>
