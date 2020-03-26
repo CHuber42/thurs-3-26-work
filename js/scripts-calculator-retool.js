@@ -25,7 +25,7 @@ $(document).ready(function() {
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
     var operation = $("input:radio[name=band]:checked").val();
-    $("#addoutput").text(result);
+    
 
     // console.log(operation);
     // $(".output").append(operation);
@@ -36,7 +36,7 @@ $(document).ready(function() {
     }
 
     else if (operation === "subtract") {
-      var result = subtact(number1, number2);
+      var result = subtract(number1, number2);
     }
 
     else if (operation === "multiply") {
@@ -46,11 +46,7 @@ $(document).ready(function() {
     else if (operation === "divide") {
       var result = divide(number1, number2);
     }
-    
-
-    
-   console.log(result); 
- //   $("#addoutput").text(result);
+    $("#output").text(result);
   });
 });
 
