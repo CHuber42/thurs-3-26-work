@@ -1,22 +1,24 @@
 function animalChange () {
   var e = $("#animals").val();    
-  alert(e);
+  
   if (e === "Snake"){
-    $("#snakeSelect").show();
+    $("#insectSelect, #turtleSelect").addClass("hidden");
+    $("#snakeSelect").removeClass("hidden");
   }
   else if (e === "Turtle"){
-    $("#turtleSelect").show();
+    $("#insectSelect, #snakeSelect").addClass("hidden");
+    $("#turtleSelect").removeClass("hidden");
   }
   else if (e === "Insect"){
-    $("#insectSelect").show();
-    }
+    $("#snakeSelect, #turtleSelect").addClass("hidden");
+    $("#insectSelect").removeClass("hidden");
   }
+  
 };
 
 
 
 $(document).ready(function(){
- 
 
   
 });
