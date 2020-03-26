@@ -18,6 +18,16 @@ var divide = function(number1, number2) {
   return number1 / number2;
 };
 
+//window.onload = whenLoadedFunc1;
+//window.onload = whenLoadedFunc2;
+
+//function whenLoaded () {
+//  var number1 = document.parseInt(getElementById("add1").val());
+//  var number2 = document.parseInt(getElementById("add2").val());
+
+//  document.getElementById("output").text() = "some stuff";
+//}
+
 // Everything below this line is user interface (or front-end) logic:
 $(document).ready(function() {
   $("form#calculator").submit(function(event) {
@@ -50,3 +60,6 @@ $(document).ready(function() {
   });
 });
 
+// $("#calculator") / document.getelementbyid("calculator")
+
+// # = .getElementById() (?)
