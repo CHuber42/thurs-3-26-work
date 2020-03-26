@@ -44,11 +44,13 @@ $(document).ready(function() {
     
     elements[0].appendChild(phoneLI);
     elements[0].appendChild(emailLI);
-  });
+    });
 
-  $(".address-book-clickable").click(function() {
-    $(".hidden").slideToggle();
-  });
 
+    $(".address-book-clickable").on(click(function() {
+      console.log("something");
+      $(".hidden").slideToggle();
+    }));
   
 });
+

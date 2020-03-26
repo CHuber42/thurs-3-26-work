@@ -23,3 +23,9 @@ button {
   display: none;
 }
 
+.address-book-clickable {
+  background-color: green;
+  color: blue;
+  cursor: pointer;
+
+}
