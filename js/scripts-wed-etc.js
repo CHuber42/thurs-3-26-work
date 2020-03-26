@@ -28,14 +28,7 @@ $(document).ready(function() {
   
   $("form#address-book-form").submit(function(event) {
     event.preventDefault();
-    $("#address-book-form-results").prepend($("#address-book-name").val());
-    var listItem = $("#address-book-form-results").first("ul");
-    
-    listItem.append("<li>" + ($("#address-book-phone").val()) + "</li>");
-    listItem.append("<li>" + ($("#address-book-email").val()) + "</li>");
-    listItem.children().addClass(".hidden");
-    
-
+    $("#address-book-form-results").prepend("<ul class='entry'>" + $("#address-book-name").val() + "<ul>");
     
   });
 
