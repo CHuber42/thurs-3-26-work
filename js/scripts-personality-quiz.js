@@ -28,10 +28,31 @@ $(document).ready(function(){
       cResults += 1;
     }
   }
-  
-   
-  console.log(max);
 
+  var preliminaryWinner = "a";
+
+  if (bResults >= aResults) {  
+    preliminaryWinner = "b";
+  }
+  if (cResults >= aResults) {
+    preliminaryWinner = "c"
+  }
+  if (bResults >= cResults && bResults >= aResults) {
+    preliminaryWinner = "b"
+    }
+    
+ 
+    if (preliminaryWinner === "a") {
+      
+      $("#a-victor").removeClass("hidden");
+    }
+    else if (preliminaryWinner === "b") {
+      $("#b-victor").removeClass();
+    }
+    else if (preliminaryWinner === "c") {
+      $("#c-victor").removeClass();
+    }
+ 
   });
 });
 

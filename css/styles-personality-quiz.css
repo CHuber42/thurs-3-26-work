@@ -2,3 +2,6 @@ html, body, .container {
   height: 99%;
 }
 
+.hidden {
+  display: none;
+}

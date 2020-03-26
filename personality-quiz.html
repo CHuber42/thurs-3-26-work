@@ -17,20 +17,38 @@
     <div class="container">
       <form id="radio">
         
-        
+        <p>How tall are you?</p>
         <div id="first-question">
-          <input type="radio" name="q1" value="a"> 
-          <input type="radio" name="q1" value="b">
+          <label>
+          <input type="radio" name="q1" value="a">
+          6ft
+          </label>
+          <label>
+          <input type="radio" name="q1" value="b"> 
+          4ft
+          </label>
+          <label>
           <input type="radio" name="q1" value="c">
+          7ft
+          </label>  
         </div>
       
-
+        <h>Which trait do you connect with best?</h>
         <div id="second-question">
+          <label>
           <input type="radio" name="q2" value="a">
+            Strength
+          </label>
+          <label>
           <input type="radio" name="q2" value="b">
-          <input type="radio" name="q2" value="c">          
+            Cunning
+          </label>
+          <label>
+          <input type="radio" name="q2" value="c"> 
+            Wisdom  
+          </label>       
         </div>
-
+        <h>
         <div id="third-question">
           <input type="radio" name="q3" value="a">
           <input type="radio" name="q3" value="b">
@@ -51,9 +69,19 @@
           <br>
           <button type="submit" class="btn">Submit</button>
       </form>
-      <div id="results">
-        
+      <div id="a-victor" class="hidden">
+        <img src="img/aragorn.jpg">
+        <p>You are Aragorn!</p>        
       </div>
+      <div id="b-victor" class="hidden">
+        <img src="img/bilbo.jpg">
+        <p>You are Bilbo Baggins!</p>
+      </div>
+      <div id="c-victor" class="hidden">
+        <img src="img/gandalf.jpg">
+        <p>You are Gandalf!</p>
+      </div>
+
     </div>
   
   </body>
