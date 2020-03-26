@@ -1,7 +1,16 @@
-git html, body, .container {
+html, body, .container {
   height: 99%;
 }
 
 .hidden {
   display: none;
+}
+
+#snakeBackground {
+  display: none;
+  background-image: url("../img/snake1.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }

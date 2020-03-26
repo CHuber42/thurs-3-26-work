@@ -4,6 +4,8 @@ function animalChange () {
   if (e === "Snake"){
     $("#insectSelect, #turtleSelect").addClass("hidden");
     $("#snakeSelect").removeClass("hidden");
+    // $("#snakeBackground").show();
+    // $("#snakeBackground").removeClass()
   }
   else if (e === "Turtle"){
     $("#insectSelect, #snakeSelect").addClass("hidden");
