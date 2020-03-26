@@ -20,5 +20,6 @@ button {
 }
 
 .hidden {
-  background-color: green;
+  display: none;
 }
+

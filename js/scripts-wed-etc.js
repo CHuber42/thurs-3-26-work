@@ -28,8 +28,26 @@ $(document).ready(function() {
   
   $("form#address-book-form").submit(function(event) {
     event.preventDefault();
-    $("#address-book-form-results").prepend("<ul class='entry'>" + $("#address-book-name").val() + "<ul>");
+    var name = $("#address-book-name").val();
     
+    var phoneLI = document.createElement("li"); 
+    phoneLI.textContent = $("#address-book-phone").val();
+    phoneLI.setAttribute('class', 'hidden');
+
+    var emailLI = document.createElement("li");
+    emailLI.textContent = $("#address-book-email").val();
+    emailLI.setAttribute('class', 'hidden');
+
+    $("#address-book-form-results").prepend(`<ul class='entry address-book-clickable'> ${name} </ul>`);
+
+    var elements = document.getElementsByClassName("entry");
+    
+    elements[0].appendChild(phoneLI);
+    elements[0].appendChild(emailLI);
+  });
+
+  $(".address-book-clickable").click(function() {
+    $(".hidden").slideToggle();
   });
 
   
