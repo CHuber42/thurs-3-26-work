@@ -25,23 +25,29 @@ $(document).ready(function() {
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
     var operation = $("input:radio[name=band]:checked").val();
-    console.log(operation);
-    $()
-    if (operation === add) {
+    $("#addoutput").text(result);
+
+    // console.log(operation);
+    // $(".output").append(operation);
+    // works 
+
+    if (operation === "add") {
       var result = add(number1, number2);
     }
 
-    else if (operation === subtract) {
-      var result = subtact(number1, number2)
+    else if (operation === "subtract") {
+      var result = subtact(number1, number2);
     }
 
-    else if (operation === multiply) {
+    else if (operation === "multiply") {
       var result = multiply(number1, number2);
     }
 
-    else if (operation === divide) {
+    else if (operation === "divide") {
       var result = divide(number1, number2);
     }
+    
+
     
    console.log(result); 
  //   $("#addoutput").text(result);
